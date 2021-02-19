@@ -103,8 +103,12 @@
             new Vue({
                 el:'#app4',
                 data: {
-                    value: 3,
-                    word: "*".repeat(3)
+                    value: 5,
+                },
+                computed: {
+                    word(){
+                        return "*".repeat(this.value)
+                    }
                 }
             });
         </script>
